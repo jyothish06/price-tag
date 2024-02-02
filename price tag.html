@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>price tag</title>
+	<style>
+		div
+		{
+			background:ghostwhite;
+			width:300px;
+			height: 400px;
+			position: relative;
+			margin: 100px auto;
+			overflow: hidden;
+		}
+		div>img
+		{
+			position: absolute;
+			width: inherit;
+			height:inherit;
+		}
+		div > #price 
+		{
+            position: absolute;
+            height: 85px;
+            top: 215px;
+            opacity: 0; 
+            transition: opacity 0.3s ease;
+            background-color: rgba(0, 0, 0, 0.5); 
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            color: white;
+        }
+        
+        div:hover #price 
+        {
+            opacity: 5; 
+        }
+	</style>
+
+</head>
+<body>
+	<div>
+		<img src="black.jpg">
+		<div id="price">
+			<ol>
+				<li>USP</li>
+				<li>499.00</li>
+				<li>black</li>
+			</ol>
+		</div>
+	</div>
+</body>
+</html>
